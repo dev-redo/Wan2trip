@@ -2,7 +2,7 @@ import { getHotelsData } from "./httpRequest";
 import { useQuery, useInfiniteQuery } from "@tanstack/react-query";
 import axios from "axios";
 
-const BASE_URL = "http://localhost:8000";
+const BASE_URL = process.env.REACT_APP_API_URL;
 
 export const useGetHotels = () => {
   return useQuery(["hotels"], () => getHotelsData());
