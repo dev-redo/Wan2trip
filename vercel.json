@@ -1,0 +1,12 @@
+{
+    "routes": [
+        {
+            "src": "/hotels",
+            "dest": "public/data/hotels.json"
+        },
+        {
+            "src": "/booked",
+            "dest": "public/data/booked.json"
+        }
+    ]
+}
